@@ -1,0 +1,194 @@
+/* Main container for analytics */
+.analytics-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header styling */
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2E5077;
+  }
+  
+  /* Section container for each chart */
+  .chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;  /* Adds space between each container */
+  }
+  
+  /* Specific styling for Pie Chart and Bar Chart containers */
+  .pie-chart-container,
+  .bar-chart-container {
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for better visibility */
+    padding: 20px;
+    background-color: #fff; /* Optional: sets a background color */
+  }
+  
+  /* Section header styling */
+  .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2E5077;
+  }
+  
+  .progress-bars-container {
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for better visibility */
+    padding: 20px;
+    background-color: #fff; /* Optional: sets a background color */
+    margin-bottom: 40px;
+  }
+  
+  /* Section container for progress */
+  .progress-container {
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for better visibility */
+    padding: 20px;
+    background-color: #fff; /* Optional: sets a background color */
+    margin-bottom: 40px; /* Space between sections */
+  }
+  
+  /* Section header for progress */
+  .progress-container .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2E5077;
+  }
+  
+  /* Custom progress bar inside progress container */
+  .progress-container .custom-progress-bar .progress-bar {
+    background-color: #2E5077 !important;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Make layout responsive for smaller screens */
+  @media (max-width: 1024px) {
+    .analytics-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .chart-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .pie-chart-container,
+    .bar-chart-container {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .progress-container {
+      max-width: 90%;
+    }
+  }
+  
+  /* For extra-small screens (mobiles) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .section-header {
+      font-size: 1.5rem;
+    }
+  
+    .chart-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .pie-chart-container,
+    .bar-chart-container {
+      width: 100%;
+      max-width: 90%;  /* Limiting max width ensures consistency */
+      margin-bottom: 30px;
+    }
+  
+    .progress-container {
+      max-width: 90%;  /* Limiting max width ensures consistency */
+      padding: 15px;
+    }
+  
+    .progress-bars-container {
+      gap: 15px;
+    }
+  
+    /* Make progress bar more compact */
+    .progress-container .custom-progress-bar .progress-bar {
+      height: 15px;
+    }
+  }
+  
+  /* For very small screens (less than 400px) */
+  @media (max-width: 402px) {
+    h1 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      
+    }
+  
+    .section-header {
+      font-size: 1.3rem;
+    }
+  
+    .chart-container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 90px;
+    }
+  
+    .pie-chart-container,
+    .bar-chart-container {
+      width: 100%;
+      max-width: 100%; /* Ensure containers take full width */
+      margin-bottom: 25px;
+    }
+  
+    .progress-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    /* Adjust progress bar width and padding */
+    .progress-container .custom-progress-bar .progress-bar {
+      height: 12px;
+    }
+  
+    .progress-bars-container {
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  
