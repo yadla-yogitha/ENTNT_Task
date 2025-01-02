@@ -53,6 +53,5 @@ The **Calendar Application for Communication Tracking** is a React-based solutio
 
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/calendar-application.git
-   cd calendar-application
+   git clone https://github.com/yadla-yogitha/ENTNT_Task.git
+   cd ENTNT_Task
