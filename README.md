@@ -5,6 +5,9 @@
 The **Calendar Application for Communication Tracking** is a React-based solution designed to help organizations manage and track their communications with external companies. It ensures timely follow-ups, consistent engagement, and actionable insights into communication effectiveness.
 
 ---
+To start
+npm install
+npm start
 
 ## Features
 
